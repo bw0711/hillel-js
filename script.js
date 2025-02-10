@@ -25,9 +25,6 @@ const str3 = prompt("Введіть третій рядок:");
 console.log(`${str3}, ${str1}, ${str2}`);
 
 // ДЗ 3.3. Розкласти п'ятизначне число
-const number = prompt("Введіть п'ятизначне число:");
-if (number.length === 5 && !isNaN(number)) {
-    console.log(number.split('').join(' '));
-} else {
-    console.log("Будь ласка, введіть коректне п'ятизначне число.");
-}
+const originalNumber = 12345;
+const editedNumber = String(originalNumber).split('').join(' ');
+console.log(editedNumber);
