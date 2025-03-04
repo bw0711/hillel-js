@@ -1,4 +1,4 @@
-const { myCompany } = require("./helpers/companyData");
+const { myCompany } = require("./mocks/companyData");
 
 const countTotalSalary = (employees) => {
     return Object.values(employees).reduce((acc, sub) => {
