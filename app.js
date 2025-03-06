@@ -427,7 +427,7 @@ const userOrdersPrice = (listOfOrders) =>
     listOfOrders
         .map(order => ({
             user: order.user,
-            total: order.items.reduce((sum, item) => sum + item.price, 0) // Исправил на total
+            total: order.items.reduce((sum, item) => sum + item.price, 0)
         }))
         .reduce((acc, { user, total }) => {
             acc[user] = (acc[user] || 0) + total;
